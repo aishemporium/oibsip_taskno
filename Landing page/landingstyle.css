@@ -1,0 +1,291 @@
+/* Global Reset and Styling */
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Box Sizing Reset */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+
+body {
+    background-color: #f8ebe9;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Main Content Styling */
+
+main {
+    width: 65%;
+    height: 100px;
+    display: flex;
+    margin-top: 1rem;
+    margin: 1rem auto;
+}
+
+/* Section 1 Styling */
+
+.section1 {
+    background-image: url(./img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+    height: 510px;
+    position: relative;
+}
+
+/* Back Button Styling */
+
+.back {
+    position: absolute;
+    left: 15px;
+    top: 22px;
+    opacity: 0.5;
+}
+
+/* Back Arrow Navigation Styling */
+
+.back_arrow {
+    position: absolute;
+    top: 1.3rem;
+    left: 40px ;
+    opacity: 0.5;
+}
+
+/* Navigation Link Styling */
+
+nav a {
+    text-decoration: none;
+}
+
+/* Section 2 Styling */
+
+.section2 {
+    background-color: white;
+    width: 70%;
+    height: 510px;
+    padding-left: 3rem;
+    padding-right: 2rem;
+}
+
+/* Unordered List Styling */
+
+ul {
+    list-style-type: none;
+    margin-top: 5px;
+    padding: 0;
+}
+
+/* List Item Styling */
+
+li {
+    display: inline;
+    float: right;
+    margin-left: 5px;
+    font-size: small;
+    opacity: 0.6;
+}
+
+/* Link Styling */
+
+li a {
+    text-decoration: none;
+    color: rgb(90, 89, 89);
+    font-family: serif;
+    font-weight: bold;
+    font-size: 0.6rem;
+}
+
+/* Hover Effect Styling */
+
+a:hover {
+    color: black;
+}
+
+/* Rule Section Styling */
+
+.rule {
+    padding-top: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+}
+
+/* Subheading Styling */
+
+.rule h6 {
+    font-size: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: -2rem;
+}
+
+/* Line Separator Styling */
+
+.line {
+    position: absolute;
+    top: 11.5rem;
+}
+
+/* Loop Section Styling */
+
+.loop-section {
+    display: flex;
+}
+
+/* Image Preview Styling */
+
+.preview {
+    height: 6rem;
+    width: 8rem;
+}
+
+/* Relative Positioning Styling */
+
+.relative {
+    position: relative;
+}
+
+/* Play Button Styling */
+
+.loop {
+    position: absolute;
+    left: 52px;
+    top: 35px;
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 30px;
+}
+
+/* Text Paragraph Styling */
+
+p {
+    margin-left: 3rem;
+    margin-top: 0.5rem;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0.8;
+    line-height: 1.5rem;
+}
+
+/* Forward Section Styling */
+
+.forward {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 6px;
+}
+
+/* View All Photos Styling */
+
+.view {
+    font-size: xx-small;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+/* Media Query for Tablets and Small Screens */
+@media only screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .section1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .back_arrow {
+        margin-top: 1.5rem;
+        left: 10px;
+    }
+
+    .section2 {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    ul {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .rule {
+        padding-top: 1rem;
+        font-size: 1.5rem;
+    }
+    .rule h6{
+        margin-top: 0.5rem;
+    }
+
+    .line {
+        position: absolute;
+        margin-top: 2rem;
+    }
+
+    .loop-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .preview {
+        margin: 4 auto;
+    }
+
+    .forward {
+        margin-top: 10px;
+    }
+
+    p {
+        margin-left: 1rem;
+        font-size: 12px;
+    }
+}
+
+/* Media Query for Mobile Phones */
+@media only screen and (max-width: 480px) {
+    .back_arrow {
+        top: 0.8rem;
+        left: 5px;
+        margin-top: -1rem;
+    }
+    .back{
+        margin-top: -0.5rem;
+    }
+    ul{
+        margin-top: -2rem;
+    }
+    .rule {
+        font-size: 1.2rem;
+    }
+    .rule h6{
+        margin-top: -1rem;
+    }
+
+    .line {
+        top: 3rem;
+    }
+    .relative{
+        margin-top: -2rem;
+    }
+
+    p {
+        margin: 0;
+        font-size: 11px;
+        line-height: normal;
+    }
+
+}
